@@ -1,0 +1,13 @@
+{
+  "name": "michelin",
+  "version": "0.1.0",
+  "authors": "Bohdan Hulchack <hulchak.bohdan@gmail.com>",
+  "description": "Michelin layout project",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

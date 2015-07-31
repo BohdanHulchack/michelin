@@ -1,0 +1,26 @@
+input {
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  border: 0;
+  background-color:  rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #fff;
+  transition: all 0.5s ease-out;
+  &:focus,
+  &:hover,
+  &:active {
+    background-color:  rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  &:-ms-input-placeholder {
+    color: #fff;
+  }
+}

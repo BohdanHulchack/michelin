@@ -1,0 +1,16 @@
+.workers {
+  list-style-type: none;
+  padding: 0;
+
+  &--one {
+    display: inline-block;
+    width: 17.9%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    vertical-align: top;
+
+    &:nth-child(5n){
+      margin-right: 0;
+    }
+  }
+}
