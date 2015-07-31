@@ -24,6 +24,17 @@ module.exports = function (grunt) {
       }
     },
 
+    sprite: {
+      all: {
+        src: '<%= app %>/img/sprite/*.png',
+        dest: '<%= app %>/img/sprite.png',
+        destCss: '<%= app %>/css/sprites.css',
+        algorithm: 'alt-diagonal',
+        padding: 50
+      }
+    },
+
+
     sass: {
       options: {
         sourceMap: true,
@@ -118,6 +129,10 @@ module.exports = function (grunt) {
       jade: {
         files: ['<%= app %>/jade/**/*.jade'],
         tasks: 'jade'
+      },
+      sprite: {
+        files: ['<%= app %>/img/sprite/*.png'],
+        tasks: 'sprite'
       }
     },
 
@@ -197,6 +212,7 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('default', [
+    'sprite',
     'sass:dev',
     'jade',
     'php:dist',
@@ -205,6 +221,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('build', [
+    'sprite',
     'sass:prod',
     'jade',
     'uglify',
