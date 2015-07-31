@@ -1,14 +1,17 @@
 header
   .header.row
-    a(href="").col-4.columns.header--logo
-      img(src="", alt="").logo
-    .col-5.columns.headet--tel
-      i.headet--tel--image
-      a(href="tel:+380674052353").headet--tel--number (067) 405 23 53
+    a(href="").col-4.columns
+      img(src="img/logo.png", alt="").header--logo
+    .col-5.columns.header--tel 
+      i.header--tel--image
+      a(href="tel:+380674052353").header--tel--number (067) 405 23 53
       | , 
-      a(href="tel:+380631777591").headet--tel--number (050) 461 17 14
-      a(href="") Смотреть другие номера
-    .col-3.columns.headet--callback
-      a(href="").headet--callback--phone Заказать обратный звонок
-      span.headet--callback--consult-status Online
-      a(href="").headet--callback--consult Чат с консультантом
+      a(href="tel:+380631777591").header--tel--number (050) 461 17 14
+      a(href="").header--tel--more Смотреть другие номера
+    .col-3.columns.header--callback
+      a(href="").header--callback--phone 
+        b Заказать обратный звонок
+      span.header--callback--status Online
+      a(href="").header--callback--consult
+        b Чат
+        |  с консультантом

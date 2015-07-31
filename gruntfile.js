@@ -37,7 +37,7 @@ module.exports = function (grunt) {
 
     sass: {
       options: {
-        sourceMap: true,
+        sourceMap: false,
         trace: false,
         check: true,
         debugInfo: true,

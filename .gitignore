@@ -6,6 +6,6 @@ gen
 .DS_Store
 node_modules/
 bower_components/
-src/css
-src/*.php
-src/modules
+# src/css
+# src/*.php
+# src/modules

@@ -1,0 +1,101 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-car_1 {
+  background-image: url(../img/sprite.png);
+  background-position: -1015px -948px;
+  width: 130px;
+  height: 78px;
+}
+.icon-car_2 {
+  background-image: url(../img/sprite.png);
+  background-position: -1195px -825px;
+  width: 131px;
+  height: 73px;
+}
+.icon-car_3 {
+  background-image: url(../img/sprite.png);
+  background-position: -1376px -707px;
+  width: 130px;
+  height: 68px;
+}
+.icon-car_4 {
+  background-image: url(../img/sprite.png);
+  background-position: -831px -1076px;
+  width: 134px;
+  height: 84px;
+}
+.icon-chat {
+  background-image: url(../img/sprite.png);
+  background-position: -1556px -592px;
+  width: 78px;
+  height: 65px;
+}
+.icon-intime {
+  background-image: url(../img/sprite.png);
+  background-position: -1784px -376px;
+  width: 69px;
+  height: 44px;
+}
+.icon-ipad {
+  background-image: url(../img/sprite.png);
+  background-position: -1684px -470px;
+  width: 50px;
+  height: 72px;
+}
+.icon-mail {
+  background-image: url(../img/sprite.png);
+  background-position: -2214px 0px;
+  width: 28px;
+  height: 20px;
+}
+.icon-novaposta {
+  background-image: url(../img/sprite.png);
+  background-position: -2105px -70px;
+  width: 59px;
+  height: 44px;
+}
+.icon-triangle_green {
+  background-image: url(../img/sprite.png);
+  background-position: -1903px -270px;
+  width: 51px;
+  height: 56px;
+}
+.icon-triangle_yellow {
+  background-image: url(../img/sprite.png);
+  background-position: -2004px -164px;
+  width: 51px;
+  height: 56px;
+}
+.icon-why_1 {
+  background-image: url(../img/sprite.png);
+  background-position: -420px -1416px;
+  width: 156px;
+  height: 156px;
+}
+.icon-why_2 {
+  background-image: url(../img/sprite.png);
+  background-position: -626px -1210px;
+  width: 155px;
+  height: 156px;
+}
+.icon-why_3 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1828px;
+  width: 164px;
+  height: 156px;
+}
+.icon-why_4 {
+  background-image: url(../img/sprite.png);
+  background-position: -214px -1622px;
+  width: 156px;
+  height: 156px;
+}

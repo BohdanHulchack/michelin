@@ -1,0 +1,871 @@
+/*== Base ==*/
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+html {
+  height: 100%; }
+
+/* line 4, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+body, main {
+  min-height: 100%; }
+
+/* line 8, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+body {
+  position: relative;
+  font-family: 'Arial', sans-serif; }
+  /* line 11, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+  body * {
+    box-sizing: border-box; }
+
+/* line 16, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  line-height: 1.3; }
+
+/* line 24, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+input:focus, input:hover, input:active, textarea:focus, textarea:hover, textarea:active, button:focus, button:hover, button:active {
+  outline: 0; }
+
+/* line 29, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 34, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+.right {
+  float: right; }
+
+/* line 37, /media/bohdan/Media/!Projects/michelin/src/scss/base/_base.scss */
+.left {
+  float: left; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.row {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 940px; }
+  /* line 9, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  /* line 13, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+  .row:after {
+    clear: both; }
+
+/* line 17, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.columns {
+  position: relative;
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* line 26, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+[class*="column"] + [class*="column"]:last-child {
+  float: right; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-1 {
+  width: 8.3333333333%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-2 {
+  width: 16.6666666667%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-3 {
+  width: 25%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-4 {
+  width: 33.3333333333%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-5 {
+  width: 41.6666666667%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-7 {
+  width: 58.3333333333%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-8 {
+  width: 66.6666666667%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-9 {
+  width: 75%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-10 {
+  width: 83.3333333333%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-11 {
+  width: 91.6666666667%; }
+
+/* line 31, /media/bohdan/Media/!Projects/michelin/src/scss/base/_grid.scss */
+.col-12 {
+  width: 100%; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/base/_buttons.scss */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 26px 0;
+  background: transparent;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 24px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+  text-decoration: none; }
+  /* line 17, /media/bohdan/Media/!Projects/michelin/src/scss/base/_buttons.scss */
+  .btn:focus, .btn:hover, .btn:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    text-decoration: none; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
+input {
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #fff;
+  transition: all 0.5s ease-out; }
+  /* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
+  input:focus, input:hover, input:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: none; }
+  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
+  input::-webkit-input-placeholder {
+    color: #fff; }
+  /* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
+  input:-ms-input-placeholder {
+    color: #fff; }
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 45, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 57, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 78, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 169, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 173, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 232, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 256, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 293, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 425, /media/bohdan/Media/!Projects/michelin/src/scss/base/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/*== Layouts ==*/
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
+.slider, .orbit-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  font-size: 0;
+  background-color: #444748; }
+  /* line 15, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
+  .slider .orbit-slide-number, .slider .orbit-timer, .orbit-container .orbit-slide-number, .orbit-container .orbit-timer {
+    display: none; }
+
+/* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
+.index .choose {
+  margin-top: 30px; }
+
+/*== Modules ==*/
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+.header {
+  margin-top: 23px;
+  border-bottom: 2px solid #d7442b; }
+  /* line 5, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+  .header--logo {
+    width: 216px;
+    height: 35px; }
+  /* line 10, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+  .header--tel {
+    text-align: right;
+    padding-right: 40px; }
+    /* line 18, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--tel--number {
+      color: #3d3d3d;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: right;
+      text-decoration: none; }
+    /* line 26, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--tel--more {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dashed #256799;
+      color: #256799;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      text-align: right;
+      text-decoration: none; }
+      /* line 36, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+      .header--tel--more:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        top: 40%;
+        right: -13px;
+        border-style: solid;
+        border-width: 6px 3px 0 3px;
+        border-color: #256799 transparent transparent transparent; }
+  /* line 51, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+  .header--callback {
+    margin-bottom: 13px;
+    border-left: 2px solid #d1d1d1; }
+    /* line 56, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--callback--phone, .header--callback--consult {
+      display: block;
+      color: #256799;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: left;
+      text-decoration: none; }
+    /* line 64, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--callback--phone {
+      padding-bottom: 6px; }
+    /* line 67, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--callback--consult {
+      display: inline-block; }
+    /* line 71, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
+    .header--callback--status {
+      display: inline-block;
+      margin-right: 7px;
+      background: #000;
+      padding: 2px;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 12px;
+      text-align: center;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -moz-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -o-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -ms-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: linear-gradient(0deg, #4c9c17 0%, #73b422 100%); }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_carousel.scss */
+.carousel {
+  list-style-type: none;
+  height: 500px;
+  width: 100%; }
+  /* line 6, /media/bohdan/Media/!Projects/michelin/src/scss/module/_carousel.scss */
+  .carousel--item {
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+/* line 3, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose__bubbles {
+  min-height: 150px;
+  background: url(../img/bubbles.png) no-repeat 3.2% 90%;
+  border-bottom: 3px solid #6eb120; }
+/* line 9, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--title {
+  position: relative;
+  padding-left: 60px;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left; }
+  /* line 17, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--title__inline {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 22, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--title:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: -18px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 54px 26.5px 0 26.5px;
+    border-color: #6eb120 transparent transparent transparent;
+    -moz-transform: scale(1) rotate(225deg) skewY(12deg);
+    -webkit-transform: scale(1) rotate(225deg) skewY(12deg);
+    transform: scale(1) rotate(225deg) skewY(12deg); }
+/* line 39, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--car {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  height: 70px;
+  width: 130px; }
+  /* line 45, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--car__big {
+    right: 30px; }
+/* line 50, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose input {
+  display: none; }
+  /* line 53, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose input:checked + label {
+    background-color: #6eb120;
+    color: #fff; }
+/* line 59, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--link {
+  cursor: pointer;
+  display: block;
+  max-height: 73px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 17px 0 10px;
+  border-top: 23px solid #d0d0d0;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  color: #525252;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none; }
+  /* line 77, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--link__two {
+    padding: 5px 0 6px; }
+  /* line 82, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--link:hover, .choose--link:focus, .choose--link:active {
+    background-color: #6eb120;
+    color: #fff; }
+    /* line 85, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    .choose--link:hover + .choose--hint, .choose--link:focus + .choose--hint, .choose--link:active + .choose--hint {
+      display: block; }
+/* line 91, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--hint {
+  position: absolute;
+  z-index: 5;
+  top: 110%;
+  display: none;
+  width: 400px;
+  background: #eeeeee;
+  border-radius: 5px;
+  padding: 4px;
+  color: #525252;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left; }
+  /* line 106, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--hint:before {
+    position: absolute;
+    content: "";
+    left: 7%;
+    top: -12px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 13px 8px;
+    border-color: transparent transparent #eeeeee transparent; }
+/* line 121, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--btn-group {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 11px;
+  max-width: 550px; }
+  /* line 127, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--btn-group--btn {
+    display: inline-block; }
+    /* line 130, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    .choose--btn-group--btn input {
+      display: none; }
+      /* line 133, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+      .choose--btn-group--btn input:checked + label {
+        border: 2px solid #6eb120;
+        background: #6eb120;
+        color: #3d3d3d; }
+    /* line 140, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    .choose--btn-group--btn label {
+      cursor: pointer;
+      display: block;
+      margin: 0 4px 10px 0;
+      padding: 0 10px 0;
+      border-radius: 2px;
+      border: 2px solid #eeeeee;
+      color: #3d3d3d;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 33px;
+      text-align: center; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+.catalog {
+  background: url("../img/catalog_bg.png") no-repeat top center;
+  background-size: contain; }
+  /* line 5, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  .catalog--title {
+    margin: 70px 0 15px;
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left; }
+    /* line 12, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+    .catalog--title b {
+      color: #6eb120; }
+  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  .catalog--footer {
+    clear: both;
+    display: block;
+    padding: 44px 0 24px;
+    color: #3d3d3d;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center; }
+  /* line 28, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  .catalog--link {
+    text-align: center;
+    text-decoration: none;
+    color: #3d6be0; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+.why {
+  background: #eeeeee; }
+  /* line 4, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+  .why--title {
+    padding: 23px 0 30px;
+    color: #3d3d3d;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center; }
+  /* line 11, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+  .why--item {
+    text-align: center; }
+    /* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+    .why--item--image {
+      display: block;
+      margin: 0 8%; }
+    /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+    .why--item--heading {
+      display: inline-block;
+      color: #3d3d3d;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase; }
+    /* line 28, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+    .why--item--description {
+      color: #909090;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px; }
+    /* line 35, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+    .why--item--delivery {
+      height: 74px;
+      position: relative; }
+      /* line 38, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+      .why--item--delivery > a {
+        position: relative;
+        display: inline-block;
+        height: 44px;
+        width: 79px;
+        overflow: hidden;
+        z-index: 2; }
+      /* line 46, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+      .why--item--delivery div {
+        position: absolute;
+        top: 44px;
+        z-index: 0;
+        height: 1px;
+        width: 91%;
+        background-color: #eeeeee;
+        -moz-box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.7);
+        -webkit-box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 5px 12px 3px rgba(0, 0, 0, 0.7); }
+        /* line 57, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
+        .why--item--delivery div:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -30px;
+          display: block;
+          width: 150%;
+          height: 30px;
+          overflow: hidden;
+          background-color: #eeeeee; }
+
+/* 
+        a(href="").icon-intime
+        a(href="").icon-novaposta
+ */
+/*== States ==*/

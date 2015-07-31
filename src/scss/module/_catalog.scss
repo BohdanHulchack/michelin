@@ -1,0 +1,33 @@
+.catalog {
+  background: url("../img/catalog_bg.png") no-repeat top center;
+  background-size: contain;
+
+  &--title {
+    margin: 70px 0 15px;
+    color:  #3d3d3d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    b {
+      color: #6eb120;
+    }
+  }
+  &--card {
+    
+  }
+  &--footer {
+    clear: both;
+    display: block;
+    padding: 44px 0 24px;
+    color: #3d3d3d;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &--link {
+    text-align: center;
+    text-decoration: none;
+    color: #3d6be0;
+  }
+}
