@@ -136,29 +136,6 @@ ul {
     box-shadow: none;
     text-decoration: none; }
 
-/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
-input {
-  height: 50px;
-  margin-bottom: 20px;
-  padding: 13px 20px;
-  border: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 24px;
-  color: #fff;
-  transition: all 0.5s ease-out; }
-  /* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
-  input:focus, input:hover, input:active {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: none; }
-  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
-  input::-webkit-input-placeholder {
-    color: #fff; }
-  /* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/base/_inputs.scss */
-  input:-ms-input-placeholder {
-    color: #fff; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -968,26 +945,76 @@ td, th {
         a(href="").icon-novaposta
  */
 /* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
-input {
-  height: 50px;
-  margin-bottom: 20px;
-  padding: 13px 20px;
-  border: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 24px;
-  color: #fff;
-  transition: all 0.5s ease-out; }
+.subscribe {
+  width: 100%;
+  padding: 27px 0;
+  background-color: #eee; }
+  /* line 6, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+  .subscribe--title {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center; }
   /* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
-  input:focus, input:hover, input:active {
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: none; }
-  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
-  input::-webkit-input-placeholder {
-    color: #fff; }
-  /* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
-  input:-ms-input-placeholder {
-    color: #fff; }
+  .subscribe--desc {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center; }
+  /* line 22, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+  .subscribe--form {
+    margin-top: 12px;
+    text-align: center; }
+    /* line 26, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+    .subscribe--form--input {
+      display: inline-block;
+      width: 300px;
+      height: 42px;
+      padding-left: 15px;
+      border-radius: 5px;
+      border: 1px solid #909090;
+      background-color: #fff;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 40px;
+      color: #909090;
+      transition: all 0.5s ease-out; }
+      /* line 45, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+      .subscribe--form--input::-webkit-input-placeholder {
+        color: #909090;
+        font-style: italic; }
+      /* line 50, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+      .subscribe--form--input:-ms-input-placeholder {
+        color: #909090;
+        font-style: italic; }
+    /* line 56, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+    .subscribe--form--btn {
+      position: relative;
+      display: inline-block;
+      width: 138px;
+      height: 42px;
+      margin-left: -11px;
+      padding-left: 10px;
+      border-radius: 5px;
+      background: #f7a900;
+      border: 0;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: left;
+      text-shadow: 1px 0px 0px #f77a00; }
+      /* line 75, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+      .subscribe--form--btn--image {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: inline-block;
+        width: 27px;
+        height: 20px;
+        box-shadow: 1px 0px 0px 0px #f77a00; }
 
 /*== States ==*/
