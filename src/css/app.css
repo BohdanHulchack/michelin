@@ -522,25 +522,12 @@ td, th {
   padding: 0; }
 
 /*== Layouts ==*/
-/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
-.slider, .orbit-container {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  min-height: 100%;
-  width: 100%;
-  font-size: 0;
-  background-color: #444748; }
-  /* line 15, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
-  .slider .orbit-slide-number, .slider .orbit-timer, .orbit-container .orbit-slide-number, .orbit-container .orbit-timer {
-    display: none; }
-
-/* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
+/* line 2, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
 .index .choose {
   margin-top: 30px; }
+/* line 5, /media/bohdan/Media/!Projects/michelin/src/scss/layout/_index.scss */
+.index .card {
+  margin-bottom: 28px; }
 
 /*== Modules ==*/
 /* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_head.scss */
@@ -773,6 +760,9 @@ td, th {
   background: url("../img/catalog_bg.png") no-repeat top center;
   background-size: contain; }
   /* line 5, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  .catalog .columns {
+    padding: 0 1%; }
+  /* line 9, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
   .catalog--title {
     margin: 70px 0 15px;
     color: #3d3d3d;
@@ -780,10 +770,10 @@ td, th {
     font-weight: 400;
     line-height: 18px;
     text-align: left; }
-    /* line 12, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+    /* line 16, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
     .catalog--title b {
       color: #6eb120; }
-  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  /* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
   .catalog--footer {
     clear: both;
     display: block;
@@ -792,11 +782,120 @@ td, th {
     font-size: 15px;
     font-weight: 400;
     text-align: center; }
-  /* line 28, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
+  /* line 32, /media/bohdan/Media/!Projects/michelin/src/scss/module/_catalog.scss */
   .catalog--link {
     text-align: center;
     text-decoration: none;
     color: #3d6be0; }
+
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+.card {
+  position: relative;
+  height: 400px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: #fff; }
+  /* line 8, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--name {
+    padding: 14px 0 0 14px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left; }
+  /* line 17, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--logo {
+    position: absolute;
+    top: 21px;
+    right: 100px;
+    max-width: 100px;
+    max-height: 40px; }
+  /* line 25, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--img {
+    position: relative;
+    height: 285px;
+    width: 100%; }
+  /* line 32, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--logo > img, .card--img > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  /* line 42, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--char {
+    list-style-type: none;
+    clear: both;
+    font-size: 0; }
+    /* line 47, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+    .card--char > * {
+      display: inline-block;
+      padding: 9px 0 0 5px;
+      width: 33%;
+      height: 35px;
+      font-size: 14px;
+      vertical-align: top; }
+    /* line 56, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+    .card--char--diam {
+      background: #eee;
+      color: #414042;
+      border-right: 1px solid #c7c7c7; }
+    /* line 62, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+    .card--char--width {
+      color: #414042;
+      background: #eee; }
+    /* line 67, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+    .card--char--price {
+      color: #56a21a;
+      font-size: 24px;
+      line-height: 18px; }
+      /* line 72, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+      .card--char--price > i {
+        padding-left: 3px;
+        font-size: 14px;
+        font-style: normal; }
+  /* line 83, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--footer--more {
+    position: relative;
+    display: inline-block;
+    padding-left: 15px;
+    color: #3d6be0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: right;
+    text-decoration: none; }
+    /* line 96, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+    .card--footer--more:after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      right: -13px;
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 6px 3px 0 3px;
+      border-color: #3d6be0 transparent transparent transparent; }
+  /* line 112, /media/bohdan/Media/!Projects/michelin/src/scss/module/_card.scss */
+  .card--footer--buy {
+    float: right;
+    display: inline-block;
+    padding: 4px 24px;
+    border-radius: 5px;
+    background: #69ae1f;
+    color: #fff;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+    background: -moz-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+    background: -o-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+    background: -ms-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+    background: linear-gradient(0deg, #4c9c17 0%, #73b422 100%); }
 
 /* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_why.scss */
 .why {
@@ -868,4 +967,27 @@ td, th {
         a(href="").icon-intime
         a(href="").icon-novaposta
  */
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+input {
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 13px 20px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 24px;
+  color: #fff;
+  transition: all 0.5s ease-out; }
+  /* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+  input:focus, input:hover, input:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: none; }
+  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+  input::-webkit-input-placeholder {
+    color: #fff; }
+  /* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
+  input:-ms-input-placeholder {
+    color: #fff; }
+
 /*== States ==*/

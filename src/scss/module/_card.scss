@@ -1,0 +1,133 @@
+.card {
+  position: relative;
+  height: 400px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background: #fff;
+
+  &--name {
+    padding: 14px 0 0 14px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  &--logo {
+    position: absolute;
+    top: 21px;
+    right: 100px;
+    max-width: 100px;
+    max-height: 40px;
+  }
+
+  &--img {
+    position: relative;
+    height: 285px;
+    width: 100%;
+  }
+
+  &--logo, &--img {
+    & > img {
+      position: absolute;
+      top: 0;
+      bottom:0;
+      left: 0;
+      right:0;
+      margin: auto;
+    }
+  }
+
+  &--char {
+    list-style-type: none;
+    clear: both;
+    font-size: 0;
+
+    & > * {
+      display: inline-block;
+      padding: 9px 0 0 5px;
+      width: 33%;
+      height: 35px;
+      font-size: 14px;
+      vertical-align: top;
+    }
+
+    &--diam {
+      background: #eee;
+      color: #414042;
+      border-right: 1px solid #c7c7c7;
+    }
+
+    &--width {
+      color: #414042;
+      background: #eee;
+    }
+
+    &--price {
+      color: #56a21a;
+      font-size: 24px;
+      line-height: 18px;
+
+      & > i {
+        padding-left: 3px;
+        font-size: 14px;
+        font-style: normal;
+      }
+    }
+
+  }
+
+  &--footer {
+
+    &--more {
+      position: relative;
+
+      display: inline-block;
+      padding-left: 15px;
+
+      color: #3d6be0;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 44px;
+      text-align: right;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        right: -13px;
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        border-style: solid;
+        border-width: 6px 3px 0 3px;
+        border-color: #3d6be0 transparent transparent transparent;
+      }
+    }
+
+    &--buy {
+      float: right;
+      display: inline-block;
+      padding: 4px 24px;
+
+      border-radius: 5px;
+      background: #69ae1f;
+
+      color:  #fff;
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: -webkit-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -moz-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -o-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -ms-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: linear-gradient(0deg, #4c9c17 0%, #73b422 100%);
+    }
+  }
+}

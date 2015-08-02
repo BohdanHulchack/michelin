@@ -1,11 +1,15 @@
 .card
   h3.card--name Michelin Agilis
-  img(src="img/item.png", alt="Michelin Agilis").card--img
+  .card--logo
+    img(src="img/item_logo.png", alt="ADAC")
+  .card--img
+    img(src="img/item.png", alt="Michelin Agilis")
   ul.card--char
     li.card--char--diam R14
     li.card--char--width 185/60
     li.card--char--price
       | 1196
       i грн
-  a(href="").card--more
-  a(href="").card--buy
+  .card--footer
+    a(href="").card--footer--more Подробнее
+    a(href="").card--footer--buy.right Купить
