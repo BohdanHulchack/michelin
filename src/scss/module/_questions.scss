@@ -1,0 +1,132 @@
+.questions {
+  padding: 30px 0 20px;
+  background: #fff;
+  .questions {
+
+    &--title {
+
+      padding-bottom: 28px;
+
+      color:  #3d3d3d;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: center;
+    }
+
+    &--manager {
+
+      &--image {
+        float: left;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        height: 67px;
+        width: 67px;
+        border-radius: 50%;
+      }
+
+      &--name {
+        color:  #3d3d3d;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: left;
+      }
+
+      &--desc {
+        color:  #909090;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left;
+      }
+
+      &--tel-img {
+        display: inline-block;
+        margin-right: 5px;
+
+        vertical-align: top;
+      }
+
+      &--tel {
+        display: inline-block;
+        vertical-align: bottom;
+        color: #000;
+        text-decoration: none;
+        font-size: 22px;
+      }
+    }
+
+
+    &--subtitle {
+      color:  #3d3d3d;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    &--desc {
+      padding-bottom: 20px;
+      color: #909090;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: center;
+    }
+
+    &--link {
+      position: relative;
+      text-decoration: none;
+        &__chat {
+          .questions--link--image {
+            top: -4px;
+            left: 15px;
+          }
+          .questions--link--btm {
+            width: 200px;
+            margin-left: 19px;
+          }
+        }
+
+        &__tel {
+          .questions--link--image {
+            top: -10px;
+            left: 50px;
+          }
+          .questions--link--btm {
+            width: 230px;
+            margin-left: 13px;
+          }
+        }
+
+      &--image {
+        position: absolute;
+        z-index: 4;
+      }
+
+      &--btm {
+        z-index: 1;
+        position: relative;
+
+        display: block;
+        height: 44px;
+        width: 100%;
+        padding-right: 20px;
+
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: right;
+        line-height: 44px;
+        text-shadow: 1px 0px 0px #3d3d3d;
+
+        border-radius: 5px;
+        background: -webkit-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+        background: -moz-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+        background: -o-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+        background: -ms-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+        background: linear-gradient(0deg, #4c9c17 0%, #73b422 100%);
+      }
+    }
+  }
+}

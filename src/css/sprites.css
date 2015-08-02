@@ -11,91 +11,97 @@ Icon classes can be used entirely standalone. They are named after their origina
 */
 .icon-car_1 {
   background-image: url(../img/sprite.png);
-  background-position: -1015px -948px;
+  background-position: -1015px -1026px;
   width: 130px;
   height: 78px;
 }
 .icon-car_2 {
   background-image: url(../img/sprite.png);
-  background-position: -1195px -825px;
+  background-position: -1195px -903px;
   width: 131px;
   height: 73px;
 }
 .icon-car_3 {
   background-image: url(../img/sprite.png);
-  background-position: -1376px -707px;
+  background-position: -1376px -785px;
   width: 130px;
   height: 68px;
 }
 .icon-car_4 {
   background-image: url(../img/sprite.png);
-  background-position: -831px -1076px;
+  background-position: -831px -1154px;
   width: 134px;
   height: 84px;
 }
 .icon-chat {
   background-image: url(../img/sprite.png);
-  background-position: -1556px -592px;
+  background-position: -1556px -670px;
   width: 78px;
   height: 65px;
 }
 .icon-intime {
   background-image: url(../img/sprite.png);
-  background-position: -1784px -376px;
+  background-position: -1784px -454px;
   width: 69px;
   height: 44px;
 }
 .icon-ipad {
   background-image: url(../img/sprite.png);
-  background-position: -1684px -470px;
+  background-position: -1684px -548px;
   width: 50px;
   height: 72px;
 }
+.icon-iphone {
+  background-image: url(../img/sprite.png);
+  background-position: -2292px 0px;
+  width: 19px;
+  height: 28px;
+}
 .icon-mail {
   background-image: url(../img/sprite.png);
-  background-position: -2214px 0px;
+  background-position: -2214px -78px;
   width: 28px;
   height: 20px;
 }
 .icon-novaposta {
   background-image: url(../img/sprite.png);
-  background-position: -2105px -70px;
+  background-position: -2105px -148px;
   width: 59px;
   height: 44px;
 }
 .icon-triangle_green {
   background-image: url(../img/sprite.png);
-  background-position: -1903px -270px;
+  background-position: -1903px -348px;
   width: 51px;
   height: 56px;
 }
 .icon-triangle_yellow {
   background-image: url(../img/sprite.png);
-  background-position: -2004px -164px;
+  background-position: -2004px -242px;
   width: 51px;
   height: 56px;
 }
 .icon-why_1 {
   background-image: url(../img/sprite.png);
-  background-position: -420px -1416px;
+  background-position: -420px -1494px;
   width: 156px;
   height: 156px;
 }
 .icon-why_2 {
   background-image: url(../img/sprite.png);
-  background-position: -626px -1210px;
+  background-position: -626px -1288px;
   width: 155px;
   height: 156px;
 }
 .icon-why_3 {
   background-image: url(../img/sprite.png);
-  background-position: 0px -1828px;
+  background-position: 0px -1906px;
   width: 164px;
   height: 156px;
 }
 .icon-why_4 {
   background-image: url(../img/sprite.png);
-  background-position: -214px -1622px;
+  background-position: -214px -1700px;
   width: 156px;
   height: 156px;
 }

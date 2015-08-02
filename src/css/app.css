@@ -944,6 +944,111 @@ td, th {
         a(href="").icon-intime
         a(href="").icon-novaposta
  */
+/* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+.questions {
+  padding: 30px 0 20px;
+  background: #fff; }
+  /* line 6, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--title {
+    padding-bottom: 28px;
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center; }
+  /* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--manager--image {
+    float: left;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    height: 67px;
+    width: 67px;
+    border-radius: 50%; }
+  /* line 29, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--manager--name {
+    color: #3d3d3d;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left; }
+  /* line 36, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--manager--desc {
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left; }
+  /* line 43, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--manager--tel-img {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: top; }
+  /* line 50, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--manager--tel {
+    display: inline-block;
+    vertical-align: bottom;
+    color: #000;
+    text-decoration: none;
+    font-size: 22px; }
+  /* line 60, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--subtitle {
+    color: #3d3d3d;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center; }
+  /* line 68, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--desc {
+    padding-bottom: 20px;
+    color: #909090;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center; }
+  /* line 77, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+  .questions .questions--link {
+    position: relative;
+    text-decoration: none; }
+    /* line 81, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link__chat .questions--link--image {
+      top: -4px;
+      left: 15px; }
+    /* line 85, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link__chat .questions--link--btm {
+      width: 200px;
+      margin-left: 19px; }
+    /* line 92, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link__tel .questions--link--image {
+      top: -10px;
+      left: 50px; }
+    /* line 96, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link__tel .questions--link--btm {
+      width: 230px;
+      margin-left: 13px; }
+    /* line 102, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link--image {
+      position: absolute;
+      z-index: 4; }
+    /* line 107, /media/bohdan/Media/!Projects/michelin/src/scss/module/_questions.scss */
+    .questions .questions--link--btm {
+      z-index: 1;
+      position: relative;
+      display: block;
+      height: 44px;
+      width: 100%;
+      padding-right: 20px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: right;
+      line-height: 44px;
+      text-shadow: 1px 0px 0px #3d3d3d;
+      border-radius: 5px;
+      background: -webkit-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -moz-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -o-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: -ms-linear-gradient(90deg, #4c9c17 0%, #73b422 100%);
+      background: linear-gradient(0deg, #4c9c17 0%, #73b422 100%); }
+
 /* line 1, /media/bohdan/Media/!Projects/michelin/src/scss/module/_subscribe.scss */
 .subscribe {
   width: 100%;
