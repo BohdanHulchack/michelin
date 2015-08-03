@@ -1,6 +1,6 @@
 
 <section id="carType" class="choose">
-  <div class="row">
+  <div class="row"><span class="choose--number">1</span>
     <h2 class="choose--title">Выберите класс авто:</h2>
     <div class="col-3 columns">
       <input type="radio" id="small" name="cartype"/>
@@ -46,7 +46,7 @@
       <label for="heavy" data-type="Легкогрузовые" class="choose--link">Легкогрузовые
         <div class="icon-car_4 right choose--car choose--car__big"></div>
       </label>
-      <div class="choose--hint">
+      <div class="choose--hint choose--hint__right">
         <p>
           Автомобили с максимальной скоростью не выше 190 км/ч <br>
           <b>Автомобили данной категории:</b> 

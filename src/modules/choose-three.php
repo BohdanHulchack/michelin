@@ -1,6 +1,6 @@
 
 <section id="carHeight" class="choose">
-  <div class="row choose__bubbles">
+  <div class="row choose__bottom"><span class="choose--number">3</span>
     <h2 class="choose--title choose--title__inline">Выберите ширину/высоту шины:</h2>
     <ul class="choose--btn-group">
       <li class="choose--btn-group--btn">

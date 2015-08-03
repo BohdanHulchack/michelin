@@ -1,5 +1,6 @@
 section.choose#carType
   .row
+    span.choose--number 1
     h2.choose--title Выберите класс авто:
     .col-3.columns
       input(type="radio", id="small", name="cartype")
@@ -35,7 +36,7 @@ section.choose#carType
       input(type="radio", id="heavy", name="cartype")
       label(for="heavy", data-type="Легкогрузовые").choose--link Легкогрузовые
         .icon-car_4.right.choose--car.choose--car__big
-      .choose--hint
+      .choose--hint.choose--hint__right
         p
           |Автомобили с максимальной скоростью не выше 190 км/ч <br>
           | <b>Автомобили данной категории:</b> 

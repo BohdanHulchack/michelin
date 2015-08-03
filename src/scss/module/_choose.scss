@@ -1,38 +1,72 @@
 .choose {
-
-  &__bubbles {
+  & .row {
     min-height: 150px;
-    background: url(../img/bubbles.png) no-repeat 3.2% 90%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+
+    & > .row {
+      background: url(../img/bubbles.png) no-repeat 0.8% 90%;
+    }
+
+    & > .row .choose--number:before {
+      border-color: #ffd102 transparent transparent transparent;
+    }
+  }
+
+  &__bottom {
     border-bottom: 3px solid #6eb120;
   }
 
-  &--title {
+  &--number {
     position: relative;
-    padding-left: 60px;
-    color: #3d3d3d;
-    font-size: 18px;
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+
+    color:  #fff;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-    &__inline {
-      display: inline-block;
-      vertical-align: top;
-    }
+    vertical-align: top;
 
     &:before {
       content: "";
       position: absolute;
-      left: 12px;
-      top: -18px;
+      z-index: -2;
+      left: -13px;
+      top: -20px;
+
       display: block;
       width: 0;
       height: 0;
+
       border-style: solid;
       border-width: 54px 26.5px 0 26.5px;
       border-color: #6eb120 transparent transparent transparent;
       -moz-transform: scale(1) rotate(225deg) skewY(12deg);
       -webkit-transform: scale(1) rotate(225deg) skewY(12deg);
       transform: scale(1) rotate(225deg) skewY(12deg);
+    }
+  }
+
+  &--title {
+    position: relative;
+    
+    display: inline-block;
+    width: 93%;
+    margin: 6px 0 0 0;
+    
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    vertical-align: top;
+    
+    &__inline {
+      width: auto;
     }
   }
 
@@ -92,25 +126,34 @@
     position: absolute;
     z-index: 5;
     top: 110%;
+
     display: none;
     width: 400px;
+    padding: 4px;
+
     background: #eeeeee;
     border-radius: 5px;
-    padding: 4px;
+
     color: #525252;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
     text-align: left;
 
+    &__right {
+      left: -182px;
+    }
+
     &:before {
       position: absolute;
       content: "";
       left: 7%;
       top: -12px;
+
       display: block;
       width: 0;
       height: 0;
+
       border-style: solid;
       border-width: 0 0 13px 8px;
       border-color: transparent transparent #eeeeee transparent;
@@ -120,9 +163,10 @@
 
   &--btn-group{
     display: inline-block;
-    list-style-type: none;
-    padding-left: 11px;
     max-width: 550px;
+    padding-left: 11px;
+
+    list-style-type: none;
 
     &--btn {
       display: inline-block;
@@ -144,7 +188,7 @@
         padding: 0 10px 0;
 
         border-radius: 2px;
-        border: 2px solid #eeeeee;
+        border: 2px solid #eee;
 
         color: #3d3d3d;
         font-size: 18px;

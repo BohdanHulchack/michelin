@@ -598,30 +598,35 @@ td, th {
     background-position: center center;
     background-repeat: no-repeat; }
 
-/* line 3, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
-.choose__bubbles {
-  min-height: 150px;
-  background: url(../img/bubbles.png) no-repeat 3.2% 90%;
+/* line 2, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose .row {
+  min-height: 150px; }
+/* line 10, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose:hover > .row, .choose:focus > .row, .choose:active > .row {
+  background: url(../img/bubbles.png) no-repeat 0.8% 90%; }
+/* line 14, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose:hover > .row .choose--number:before, .choose:focus > .row .choose--number:before, .choose:active > .row .choose--number:before {
+  border-color: #ffd102 transparent transparent transparent; }
+/* line 19, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose__bottom {
   border-bottom: 3px solid #6eb120; }
-/* line 9, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
-.choose--title {
+/* line 23, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--number {
   position: relative;
-  padding-left: 60px;
-  color: #3d3d3d;
-  font-size: 18px;
+  display: inline-block;
+  height: 30px;
+  width: 35px;
+  color: #fff;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 32px;
-  text-align: left; }
-  /* line 17, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
-  .choose--title__inline {
-    display: inline-block;
-    vertical-align: top; }
-  /* line 22, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
-  .choose--title:before {
+  vertical-align: top; }
+  /* line 34, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--number:before {
     content: "";
     position: absolute;
-    left: 12px;
-    top: -18px;
+    z-index: -2;
+    left: -13px;
+    top: -20px;
     display: block;
     width: 0;
     height: 0;
@@ -631,24 +636,39 @@ td, th {
     -moz-transform: scale(1) rotate(225deg) skewY(12deg);
     -webkit-transform: scale(1) rotate(225deg) skewY(12deg);
     transform: scale(1) rotate(225deg) skewY(12deg); }
-/* line 39, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+/* line 54, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+.choose--title {
+  position: relative;
+  display: inline-block;
+  width: 93%;
+  margin: 6px 0 0 0;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  vertical-align: top; }
+  /* line 68, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--title__inline {
+    width: auto; }
+/* line 73, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
 .choose--car {
   position: absolute;
   top: 0;
   right: 20px;
   height: 70px;
   width: 130px; }
-  /* line 45, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  /* line 79, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose--car__big {
     right: 30px; }
-/* line 50, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+/* line 84, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
 .choose input {
   display: none; }
-  /* line 53, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  /* line 87, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose input:checked + label {
     background-color: #6eb120;
     color: #fff; }
-/* line 59, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+/* line 93, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
 .choose--link {
   cursor: pointer;
   display: block;
@@ -664,32 +684,35 @@ td, th {
   line-height: 16px;
   text-align: center;
   text-decoration: none; }
-  /* line 77, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  /* line 111, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose--link__two {
     padding: 5px 0 6px; }
-  /* line 82, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  /* line 116, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose--link:hover, .choose--link:focus, .choose--link:active {
     background-color: #6eb120;
     color: #fff; }
-    /* line 85, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    /* line 119, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
     .choose--link:hover + .choose--hint, .choose--link:focus + .choose--hint, .choose--link:active + .choose--hint {
       display: block; }
-/* line 91, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+/* line 125, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
 .choose--hint {
   position: absolute;
   z-index: 5;
   top: 110%;
   display: none;
   width: 400px;
+  padding: 4px;
   background: #eeeeee;
   border-radius: 5px;
-  padding: 4px;
   color: #525252;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   text-align: left; }
-  /* line 106, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  /* line 143, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  .choose--hint__right {
+    left: -182px; }
+  /* line 147, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose--hint:before {
     position: absolute;
     content: "";
@@ -701,31 +724,31 @@ td, th {
     border-style: solid;
     border-width: 0 0 13px 8px;
     border-color: transparent transparent #eeeeee transparent; }
-/* line 121, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+/* line 164, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
 .choose--btn-group {
   display: inline-block;
-  list-style-type: none;
+  max-width: 550px;
   padding-left: 11px;
-  max-width: 550px; }
-  /* line 127, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+  list-style-type: none; }
+  /* line 171, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
   .choose--btn-group--btn {
     display: inline-block; }
-    /* line 130, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    /* line 174, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
     .choose--btn-group--btn input {
       display: none; }
-      /* line 133, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+      /* line 177, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
       .choose--btn-group--btn input:checked + label {
         border: 2px solid #6eb120;
         background: #6eb120;
         color: #3d3d3d; }
-    /* line 140, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
+    /* line 184, /media/bohdan/Media/!Projects/michelin/src/scss/module/_choose.scss */
     .choose--btn-group--btn label {
       cursor: pointer;
       display: block;
       margin: 0 4px 10px 0;
       padding: 0 10px 0;
       border-radius: 2px;
-      border: 2px solid #eeeeee;
+      border: 2px solid #eee;
       color: #3d3d3d;
       font-size: 18px;
       font-weight: 700;

@@ -1,6 +1,6 @@
 
 <section id="carDiametr" class="choose">
-  <div class="row">
+  <div class="row"><span class="choose--number">2</span>
     <h2 class="choose--title choose--title__inline">Выберите диаметр шины:</h2>
     <ul class="choose--btn-group">
       <li class="choose--btn-group--btn">
